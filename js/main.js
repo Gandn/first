@@ -1,0 +1,6 @@
+import '../public/js/jquery-1.9.1.min.js'
+import './index.js'
+import './swiper-bundle.min.js'
+import './scrollReveal.js'
+import './jquery.waypoints.min.js'
+import './jquery.countup.min.js'

@@ -1,0 +1,176 @@
+@import '../public/css/main.css';
+@import '../public/css/child-style.css';
+.head-ul li:nth-child(7)::after{
+    animation: wid .5s linear;
+    width: 100%;
+}
+@keyframes wid {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.Contact img{
+    display: block;
+    width: 100%;
+}
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    .BMap_bubble_content{width: 165px !important;}
+    .BMap_noprint{
+        background: url(./img/1.png) center/cover no-repeat !important;
+        width: 40px !important;
+        height: 40px !important;
+        background-color: #f5f3f0 !important;
+    } 
+    .BMapLabel{
+        transform: translate(30px,8px) !important;
+    }
+.box{
+    position: relative;
+}
+.box .boxcon{
+    width: 400px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 1px 20px rgb(0 0 0 / 20%);
+    position: absolute;
+    left: 100px;
+    top: -390px;
+}
+.box .boxcon>div{
+    height: 154px;
+    background: url(./img/cottitbg.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 25px 0px 0px 20px
+}
+.box .boxcon ul{
+    padding: 5px 40px 40px;
+}
+.box .boxcon ul li{
+    padding-left: 24px;
+    background: url(./img/cot3.png) left 7px no-repeat;
+    color: #4c4c4c;
+    font-size: 14px;
+    line-height: 32px;
+}
+.box .boxcon ul li:nth-child(2){
+    background: url(./img/cot2.png) left 10px no-repeat;
+}
+.box .boxcon ul li:nth-child(1){
+    background: url(./img/cot1.png) left 10px no-repeat;
+}
+.box .boxcon ul li span{
+    font-weight: bold;
+}
+.tab{
+    padding: 120px 0;
+    background: url(./img/msgbg.jpg) no-repeat center bottom;
+}
+table{
+    margin: 0 auto ;
+    color: #333;
+}
+table tr th{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 100;
+    padding-bottom: 50px;
+    display: block;
+    border-bottom: 2px solid #e1e1e1;
+}
+table tr:not(:nth-child(1)){
+    display: block;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 14px;
+}
+table tr td label{
+    display: block;
+}
+table tr td{
+    display: block;
+}
+table tr td span{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+table tr td input{
+    height: 30px;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #666;
+    padding: 0px 10px;
+    outline: none;
+    width: 240px;
+}
+table tr:last-of-type td span{
+    transform: translateY(-179px);
+}
+table tr:last-of-type td textarea{
+    height: 200px;
+    width: 880px;
+    box-sizing: border-box;
+    color: #666;
+    padding: 10px 10px;
+    border: 1px solid #e1e1e1;
+    outline: none;
+    resize:none;
+    background-color: #f7f7f7;
+}
+.tab>input{
+    width: 200px;
+    height: 42px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1f3379;
+    margin: 0 auto;
+    display: block;
+    margin-top: 54px;
+    cursor: pointer;
+}
+@media screen and (max-width:1400px){
+    .box .boxcon{
+        left: 30px;
+    }
+}
+@media screen and (max-width:1025px){
+    .box .boxcon{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .box{
+        margin-top: 30px;
+    }
+    .box .boxcon>div{
+        background: url(./img/cottitbg.jpg) left center no-repeat;
+    }
+    .box{
+        height: 487px;
+    }
+    table{
+        width: 100%;
+    }
+    table tr:last-of-type td textarea{
+        width: 240px;
+        height: 100px;
+    }
+    table tr:last-of-type td span {
+        transform: translateY(-86px);
+    }
+}
+@media screen and (max-width:960px){
+    .Contact img{
+        margin-top: 60px;
+    }
+}

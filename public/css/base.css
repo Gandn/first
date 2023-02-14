@@ -1,0 +1,8 @@
+* { margin:0; padding:0; word-wrap:break-word; word-break:break-all;}
+body,html{overflow-x: hidden;}
+/* body { background:#FFF; color:#333; font:12px/1.6em Helvetica, Arial, sans-serif; } */
+a { color:#fff; text-decoration:none;display: block;}
+ul, li { list-style:none; }
+img { border:none; display: block;}
+h1, h2, h3, h4, h5, h6 { font-size:1em; }
+html { overflow:-moz-scrollbars-vertical; }

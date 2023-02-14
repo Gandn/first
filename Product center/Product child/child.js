@@ -1,0 +1,1 @@
+import '../../newsfile/news child/news child.js'

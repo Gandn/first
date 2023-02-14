@@ -1,0 +1,137 @@
+@import '../public/css/main.css';
+@import '../public/css/child-style.css';
+.head-ul li:nth-child(5)::after{
+    animation: wid .5s linear;
+    width: 100%;
+}
+@keyframes wid {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.download img{
+    display: block;
+    width: 100%;
+}
+.same{
+    margin: 0 auto;
+    width: 1200px;
+}
+.subNav{
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.subNav ul{
+    display: flex;
+}
+.subNav ul li{
+    width: 33.333333333%;
+}
+.subNav ul li a{
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+}
+.subNav ul li a.aft{
+    color: #1f3379;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+}
+.subNav ul li a::after{
+    content: '';
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    border-bottom: 3px solid #1f3379;
+    transition: all .5s;
+}
+.subNav ul li a.aft::after{
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid #1f3379;
+}
+.subNav ul li a:hover{
+    color: #1f3379;
+}
+.subNav ul li a:hover::after{
+    width: 100%;
+}
+.same ul{
+    width: 1310px;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.same ul li{
+    font-size: 14px;
+    padding: 15px 40px 15px 0;
+    border-bottom: 1px solid #ddd;
+    float: left;
+    line-height: 25px;
+    width: 330px;
+    margin-right: 105px;
+    box-sizing: border-box;
+    background: url(./img/xz.png) no-repeat right 22px;
+    transition: transform .7s;
+}
+.same ul li:hover{
+    transform: translateX(-10px);
+}
+.same ul li h3{
+    position: relative;
+    color: #4c4c4c;
+    padding-left: 12px;
+    font-weight: 300;
+}
+.same ul li h3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 3px;
+    height: 3px;
+    background-color: #999;
+    border-radius: 50%;
+}
+.same ul li p{
+    color: #999;
+    padding-left: 12px;
+}
+@media screen and (max-width:1336px){
+    .same{
+        width: 960px;
+    }
+    .same ul{
+        width: 1000px;
+    }
+    .same ul li{
+        width: 300px;
+        margin-right: 30px;
+        transition: width .6s;
+    }
+}
+@media screen and (max-width:960px){
+    .download img{
+        margin-top: 60px;
+    }
+    .same{
+        width: 100%;
+    }
+    .subNav{
+        margin-bottom: 30px;
+    }
+    .same ul{
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .same ul li{
+        width: 100%;
+    }
+}

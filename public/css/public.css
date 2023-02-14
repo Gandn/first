@@ -1,0 +1,262 @@
+ /* 头部 */
+ .head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 54px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0);
+    transition: all .3s;
+    z-index: 9;
+    overflow: hidden;
+  }
+  .head-X{
+      padding: 5px 25px;
+      background: rgba(0,0,0,.8);
+  }
+  .logo{
+      float: left;
+  }
+  .logo #head-logo{
+      width: 145px;
+      height: 54px;
+      background: url(../images/logo.png) no-repeat;
+      background-size: 100% 100%;
+  }
+  .head-ul{
+      float: right;
+      display: flex;
+  }
+  .head-ul li{
+      padding: 0 30px;
+      transition: padding .2s;
+  }
+  .head-ul li a{
+      font-size: 14px;
+      line-height: 54px;
+      transition: color .6s;
+  }
+  .head-ul li a:hover{
+      color: #0067da;
+  }
+  .head-ul-X{
+      display: none;
+  }
+  .e{
+      float: right;
+      padding-top: 18px;
+      width: 21px;
+      height: 21px;
+      background: url(../images/e.png) no-repeat 0 16px;
+      margin-left: 20px;
+  }
+  .menu{
+      cursor: pointer;
+      display: none;
+      margin: 18px 0 0 10px;
+      float: right;
+  }
+  .menu span{
+      display: block;
+      width: 26px;
+      height: 3px;
+      background-color: #fff;
+  }
+  .menu span:nth-child(2){
+      margin: 5px 0;
+  }
+  /* 底部 */
+footer{
+    background-color: #1a1a1a;
+}
+.foo-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+.foo-top dl a{
+    font-size: 14px;
+    display: block;
+}
+.foo-top dd{
+    margin-left: 0;
+}
+.foo-con-left{
+    display: flex;
+}
+.foo-con-left dl{
+    margin-right: 60px;
+}
+.foo-con-left dl dt a{
+    padding-bottom: 12px;
+    background: url(../images/fottline.gif) no-repeat 0 28px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.foo-con-left dl dd a{
+    margin-bottom: 8px;
+    color: #808080;
+    transition: all .5s;
+}
+.foo-con-left dl dd a:hover{
+    color: #fff;
+    transform: translate(-4px,0px);
+}
+.foo-con-right{
+    display: flex;
+}
+.foo-con-right dl{
+    color: #808080;
+    font-size: 14px;
+    line-height: 30px;
+}
+.foo-con-right dl:first-of-type{
+    margin-right: 40px;
+}
+.foo-con-right dl:first-of-type dd:first-of-type{
+    padding-left: 26px;
+    background: url(../images/dd1.png) no-repeat -0 8px;
+}
+.foo-con-right dl:first-of-type dd:first-of-type p{
+    font-size: 20px;
+}
+.foo-con-right dl:first-of-type dd:last-of-type{
+    padding-left: 26px;
+    background: url(../images/dd2.png) no-repeat -0 8px;
+}
+.foo-con-right dl:last-of-type dd img{
+    width: 120px;
+    margin-bottom: 10px;
+}
+.foo-con-right dl:last-of-type dd p{
+    text-align: center;
+}
+.foo-bottom{
+    position: relative;
+    padding: 0 60px;
+    display: flex;
+    color: #666;
+    font-size: 12px;
+    line-height: 46px;
+    background-color: black;
+}
+.foo-bottom>a{
+    margin: 18px 0 0 20px;
+}
+.foo-bottom p{
+    transition: color .5s;
+}
+.foo-bottom p:first-of-type a{
+    color: #666;
+}
+.foo-bottom p:hover{
+    color: #fff;
+}
+.foo-bottom p:last-of-type{
+    float: right !important;
+    margin-left: 50.8%;
+}
+.foo-bottom p:last-of-type a{
+    color: #666;
+}
+.foo-bottom p a{
+    display: inline-block;
+    transition: color .5s;
+}
+.foo-bottom p a:hover{
+    color: #fff;
+}
+.foo-bottom .positioning{
+    position: absolute;
+    width: 106px;
+    height: 37px;
+    text-align: center;
+    cursor: pointer;
+    top: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/arrbg.jpg) no-repeat 0 0;
+}
+.foo-bottom .positioning img{
+    margin: 14px auto;
+}
+@media screen and (max-width:1200px){
+    .foo-top{
+        justify-content: space-around;
+    }
+    .foo-top .foo-con-left{
+        display: none;
+    }
+    .foo-top .foo-con-right dl:first-of-type{
+        display: none;
+    }
+    .foo-bottom{
+        display: block;
+        text-align: center;
+        padding: 15px 60px;
+        line-height: 18px;
+    }
+    .foo-bottom>a{
+        margin: 5px 0 0;
+    }
+    .foo-bottom p:last-of-type{
+        display: none;
+    }
+}
+@media screen and (min-width:960px){
+    .logo #head-logo:hover{
+        background: url(../images/lll.png) no-repeat;
+        background-size: 100% 100%;
+    }
+  }
+@media screen and (max-width:960px){
+    .head{
+        padding: 5px 10px;
+        background-color: black;
+    }
+    #head-logo{
+        width: 120px !important;
+        height: 44px !important;
+    }
+    .head-ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .head-ul-X{
+        display: block;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: -50%;
+        transform: translateX(-50%);
+        padding: 10px 2.5% 0;
+        width: 50%;
+        box-sizing: border-box;
+        height: 100%;
+        z-index: 1000;
+        background: rgba(0,0,0,0);
+        transition: all .8s ;
+    }
+    .head-ul-X li{
+        padding: 0 5%;
+        line-height: 42px;
+        font-size: 16px;
+        border-bottom: 1px solid #232530;
+    }
+    .head-ul-X-B{
+        background: rgba(0,0,0,1) !important;
+    }
+    .mask{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: rgba(0,0,0,0);
+        transition: all .8s;
+    }
+}
